@@ -2,7 +2,14 @@ pushgateway:
   targets: '192.168.217.137:9091'
 
 
+cpuinfo:
+  user_time: psutil.cpu_times().user
+  sys_time: psutil.cpu_times().system
+  idle_time: psutil.cpu_times().idle
+  iowait_time: psutil.cpu_times().iowait
 
-
-
+meminfo:
+  total_mem: total
+  used_mem: used
+  free_mem: free
 
